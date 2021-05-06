@@ -1,0 +1,28 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 2853366..2bef812 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -46,6 +46,23 @@[m
+         Repositoriy (Local/Remote)[m
+     </h3>[m
+     <p>Es el area donde se almacenan los cambios confirmados, en formato <strong>BLOB (binare object File</strong>. esto nos permite restablecer tanto archivos, directorios, o hasta el mismo proyecto utilizando como referencia dichos archivos e indicando a git en que instancia del mismo. </p>[m
+[32m+[m[32m<ul class="list">[m
+[32m+[m[32m    <li><strong>git diff &lt;ref></strong>compara el WORKING DIRECTORIY con el commit de la referencia especificada, podemos tambien indicar mediante parametros algun archivo en particular como por ejemplo:[m
+[32m+[m[32m        <em>git fiff HEAD^ -- index.html</em>[m
+[32m+[m[32m        <ul>[m
+[32m+[m[32m            <li>[m
+[32m+[m[32m                <srong>referencia absoluta</srong> es el numero de hash unico que se especifica en el comit dentro del historial de cambios.</li>[m
+[32m+[m[32m            <li>[m
+[32m+[m[32m                <srong>referencia relativa</srong> se refiere a c uantos ancestros (head^^) o commits anteriores (head~2) se encuentra en nuestro punto de comparacion.</li>[m
+[32m+[m[32m        </ul>[m
+[32m+[m[41m    [m
+[32m+[m[32m    </li>[m
+[32m+[m[32m    <li><strong>git blame &lt;flie></strong>muestra el numero de commit, el autor, la fecha y hora en la que se realizaron los cambios en un archivo; tambien muestra cueando hay cambios pendientes por confirmar</li>[m
+[32m+[m[32m    <li><strong>git commit</strong></li>[m
+[32m+[m[32m    <li><strong>git checkout &lt;ref></strong></li>[m
+[32m+[m[32m</ul>[m
+[32m+[m
+[32m+[m
+ </article>[m
+ [m
+ </section>[m
