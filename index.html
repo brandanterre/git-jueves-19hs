@@ -27,6 +27,19 @@
 <article>
     <h3>staging Area (INDEX)</h3>
     <p>Es el area de control de cambios, un archivo que identifica y verifica los cambios realizados en el directorio de trabajo. Todo archivo al que querramos hacerle seguimiento, estar agregado previamente al Index para que se realice su  <strong>snapshot</strong></p>
+<ul class="list">
+    <li><strong>git status</strong> compara el Working Directory con el index y notifica las diferencias que existen entre ambos. Este comando notifica sobre el estado de los archivos. 
+    <ul>
+        <li><strong>untracked</strong>archivo que no se encuentra en el Index</li>
+        <li><strong>tracked</strong>archivo al que se le esta haciendo seguimiento</li>
+        <li><strong>modified</strong>archivo que difiere con lo registrado en el index</li>
+        <li><strong>commited</strong>archivo cuyos cambios ya fueron confirmados</li>
+    </ul>
+    </li>
+    <li><strong>git add &lt;file></strong>agrega al index los archivos seleccionados, podemos acelerar esta tarea utilizando la expresion <em>gitt add . </em> pero tenemos que tener en cuenta que esto agrega todos los cambios del directorio actual.</li>
+    <li><strong>git rm --cached &lt;flie></strong>remueve el archivo seleccionado del index, pero mantiene los cambios en el WORKING DIRECTOY. Esto funciona en el caso que hayamos agregado el archivo al index y todavia no exista en el historial. </li>
+    <li><strong>git restore &lt;flie></strong>restablece el estado del archivo seleccionado a como se encontraba en el INDEX, antes de realizar los cambios.</li>
+</ul>
 </article>
 <article>
     <h3>
