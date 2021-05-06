@@ -1,0 +1,23 @@
+/* content first*/
+ *{
+     box-sizing: border-box;
+     font-family: sans-serif;
+ }
+ body, h1, h2, h3{ margin: 0 }
+/* Navigation */
+
+/* Header */
+#header { 
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    min-height: 300px;
+max-height: 600px;
+color:#eee;
+background-color: #999;}
+
+/* main content*/
+
+/* footer */
