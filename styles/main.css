@@ -7,6 +7,16 @@
 /* Navigation */
 
 /* Header */
+#header { 
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    min-height: 300px;
+max-height: 600px;
+color:#eee;
+background-color: #999;}
 
 /* main content*/
 
